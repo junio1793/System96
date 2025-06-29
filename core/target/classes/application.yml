@@ -1,0 +1,55 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://chillwace-postgres.c74w406egy2j.sa-east-1.rds.amazonaws.com:5432/db_vaporwave
+    username: postgres
+    password: rivaldo11
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 60000
+      max-lifetime: 1800000
+      connection-timeout: 30000
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8081
+  address: 127.0.0.1
+  servlet:
+    context-path: /
+  http2:
+    enabled: true
+  compression:
+    enabled: true
+    min-response-size: 1
+    mime-types: text/html,
+      text/xml,
+      text/plain,
+      text/css,
+      text/javascript,
+      application/javascript,
+      application/json,
+      application/xml,
+      application/pdf,
+      image/png,
+      image/jpeg,
+      image/svg+xml
+
+logging:
+  level:
+    com.zaxxer.hikari.pool.HikariPool: OFF
+    com.zaxxer.hikari.pool.PoolBase: OFF
+    com.zaxxer.hikari.HikariConfig: OFF
+    com.zaxxer.hikari.HikariDataSource: OFF
+    org.hibernate: ERROR
+    org.hibernate.SQL: OFF
+    org.hibernate.type.descriptor.sql: OFF
+    org.hibernate.Vesrion: OFF
+    org.apache.catalina: OFF
+    org.springframework.orm: OFF

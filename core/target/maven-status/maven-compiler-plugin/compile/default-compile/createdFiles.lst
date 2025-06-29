@@ -1,0 +1,7 @@
+com\abstractentity\model\SongLink.class
+com\abstractentity\model\Album.class
+com\abstractentity\model\SongGenreEmbeddable.class
+com\abstractentity\model\Song.class
+com\abstractentity\model\Artist.class
+com\abstractentity\model\Genre.class
+com\abstractentity\model\SongGenre.class
