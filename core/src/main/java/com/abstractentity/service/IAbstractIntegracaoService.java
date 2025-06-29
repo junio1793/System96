@@ -16,21 +16,24 @@ public interface IAbstractIntegracaoService<ENTIDADE extends AbstractEntidade, I
 
     JpaRepository<ENTIDADE, ID> getRepository();
 
+    DTO toDto(ENTIDADE entidade);
+
+    ENTIDADE toEntity(DTO dto);
+
     List<DTO> findAll();
 
     List<DTO> findAll(Sort sort);
 
     Page<DTO> findAll(Pageable pageable);
 
-    List<ENTIDADE> findAllEntidade();
+    DTO findById(ID id);
 
-    List<ENTIDADE> findAllEntidade(Sort sort);
+    Object save(Object params);
 
-    Page<ENTIDADE> findAllEntidade(Pageable pageable);
+    ENTIDADE saveEntidade(DTO dto);
 
-    DTO findByID(ID id);
+    DTO update(ID id, DTO dto);
 
-    Object save(Object data);
+    void delete(ID id);
 
-    Object saveEntidade(DTO dto);
 }

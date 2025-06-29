@@ -5,12 +5,16 @@ import com.abstractentity.utils.UtilsCommonToUse;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.PostLoad;
 import jakarta.persistence.Transient;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 
+@Getter
+@Setter
 @MappedSuperclass
 public abstract class AbstractEntidade implements Serializable {
 

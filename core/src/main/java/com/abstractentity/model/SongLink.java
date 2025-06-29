@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class SongLink {
+public class SongLink extends AbstractEntidade{
 
     @Id
     @Column(name = "ID", nullable = false, precision = 0, scale = -127)

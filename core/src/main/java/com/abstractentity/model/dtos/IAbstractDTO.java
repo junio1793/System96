@@ -5,4 +5,8 @@ import java.io.Serializable;
 public interface IAbstractDTO extends Serializable {
 
     boolean containsAttr(String key);
+
+    boolean isReadOnly();
+
+    <T> T getAttr(String key);
 }

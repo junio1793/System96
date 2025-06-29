@@ -14,7 +14,7 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "artist")
-public class Artist {
+public class Artist extends AbstractEntidade{
 
     @Id
     @Column(name = "ID", nullable = false, precision = 0, scale = -127)

@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "SONG_GENRE")
-public class SongGenre {
+public class SongGenre extends AbstractEntidade {
 
     @EmbeddedId
     private SongGenreEmbeddable id;
