@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://chillwace-postgres.c74w406egy2j.sa-east-1.rds.amazonaws.com:5432/db_vaporwave
-    username: postgres
-    password: rivaldo11
+    url: *********************
+    username: ************
+    password: ************
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
